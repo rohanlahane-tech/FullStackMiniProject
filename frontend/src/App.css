@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  margin: 8px 18px;
+  width: calc(100% - 36px);
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 5px 0 22px;
+}
+
+.user-form {
+  width: 267px;
+}
+
+.user-form input {
+  display: block;
+  width: 267px;
+  height: 24px;
+  margin: 0 0 24px;
+  padding: 3px 6px;
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 3px;
+}
+
+button {
+  padding: 2px 11px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: #eee;
+  color: #111;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 21px;
+  margin: 23px 0 18px;
+}
+
+.users-list {
+  padding-left: 61px;
+  margin-top: 0;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.users-list li {
+  margin-bottom: 0;
+  overflow-wrap: anywhere;
+}
+
+.message {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+
+.notification {
+  width: fit-content;
+  max-width: 100%;
+  margin: 10px 0;
+  padding: 9px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.notification.success {
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #86efac;
+}
+
+.notification.error {
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+}
+
+
+.toast {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 12px 22px;
+  background: #198754;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  animation: toastSlideDown 0.3s ease-out;
+}
+
+@keyframes toastSlideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+
+
+.notification {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 12px 22px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.notification.success {
+  background-color: #198754;
+}
+
+.notification.error {
+  background-color: #dc3545;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
